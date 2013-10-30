@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical" android:layout_width="fill_parent"
+  android:layout_height="wrap_content">
+
+  <LinearLayout android:id="@+id/detailsTop" android:orientation="vertical"
+    android:layout_width="fill_parent" android:layout_height="wrap_content">
+    <include layout="@layout/common_header" />
+  </LinearLayout>
+
+  <ScrollView android:layout_width="fill_parent"
+    android:layout_below="@id/detailsTop" android:layout_height="wrap_content"
+    android:layout_weight="1">
+    <LinearLayout android:orientation="vertical"
+      android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+      <TextView
+          android:id="@+id/assignmentDescription"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:background="@color/white"
+          android:padding="10px"
+          android:textColor="@color/black"
+          android:textSize="24px"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/assignmentInstructions"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:background="@color/white"
+          android:padding="10px"
+          android:textColor="@color/black"
+          android:textSize="24px" />
+
+    </LinearLayout>
+  </ScrollView>
+
+  <LinearLayout android:orientation="horizontal"
+    android:layout_alignParentBottom="true" android:layout_width="fill_parent"
+    android:layout_height="wrap_content" android:background="@color/white">
+    <Button android:id="@+id/captureButton" android:layout_weight="1"
+      android:layout_width="200px" android:layout_height="wrap_content"
+      android:text="Record" />
+
+    <Button android:id="@+id/reviewButton" android:layout_weight="1"
+      android:layout_width="200px" android:layout_height="wrap_content"
+      android:text="Review" />
+  </LinearLayout>
+  
+</RelativeLayout>

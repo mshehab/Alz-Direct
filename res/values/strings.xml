@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="intro_msg">Please configure your news source and account information.</string>
+    <string name="app_name">Alz Direct</string>
+    <string name="domain_prompt">Choose a news source</string>
+    <string name="yt_account_prompt">Choose your Google/YouTube account</string>
+    <string name="dev_key">"AI39si52HkiRZncVgKrgAs_1x5ACjsbJVCGqQlfeyMwYGjGroFGIXtSk66CVijpqLR5T4Vuu2ZwyHYEvFX9biWjElVdRmX5ErA"</string>
+    <string name="client_id">549785221519.apps.googleusercontent.com</string>
+    <string name="default_ytd_domain">ytd-alz.appspot.com</string>
+    <string name="default_ytd_domain_name">Alz YTD</string>
+    <string name="menu_settings">menu_settings</string>
+</resources>

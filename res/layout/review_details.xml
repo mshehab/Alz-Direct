@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ReviewDetailsActivity" >
+
+    <LinearLayout
+        android:id="@+id/detailsTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/common_header" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailsTop"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/videoTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10px"
+                android:textColor="@color/black"
+                android:textSize="20px"
+                android:textStyle="bold" />
+
+            <WebView
+                android:id="@+id/webViewVideo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:id="@+id/videoReviewviews"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/videoTitle"
+                android:minHeight="25px"
+                android:paddingLeft="5px"
+                android:paddingRight="5px"
+                android:textColor="@color/dark_gray"
+                android:textSize="20px" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/fullButton"
+            android:layout_width="200px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Watch Full Screen" />
+
+        <Button
+            android:id="@+id/rateButton"
+            android:layout_width="200px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Rate Video" />
+    </LinearLayout>
+
+</RelativeLayout>
